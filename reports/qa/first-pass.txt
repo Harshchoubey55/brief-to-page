@@ -1,0 +1,22 @@
+ERROR  image images/hero-harbour.png: width/height not set, layout will shift while it loads
+ERROR  image images/hero-harbour.png: 1161 KB, budget is 300 KB
+ERROR  image images/theme-suppliers.png: no alt attribute
+ERROR  image images/theme-suppliers.png: width/height not set, layout will shift while it loads
+ERROR  image images/theme-suppliers.png: 898 KB, budget is 300 KB
+ERROR  image images/theme-freight.png: no alt attribute
+ERROR  image images/theme-freight.png: width/height not set, layout will shift while it loads
+ERROR  image images/theme-freight.png: 923 KB, budget is 300 KB
+ERROR  image images/theme-stock.png: width/height not set, layout will shift while it loads
+ERROR  image images/theme-stock.png: 910 KB, budget is 300 KB
+ERROR  form field 'name' has no visible <label>
+ERROR  form field 'email' has no visible <label>
+ERROR  form field 'company' has no visible <label>
+ERROR  tokens.css --tw-ink-muted is #8A96A3, brand guide says #5A6675
+ERROR  --tw-ink-muted on --tw-white contrast is 3.01:1, needs 4.5:1
+ERROR  --tw-ink-muted on --tw-sand contrast is 2.63:1, needs 4.5:1
+WARN   image images/hero-harbour.png: not WebP
+WARN   image images/theme-suppliers.png: not WebP
+WARN   image images/theme-freight.png: not WebP
+WARN   image images/theme-stock.png: not WebP
+
+16 errors, 4 warnings
