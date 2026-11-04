@@ -43,6 +43,7 @@ a { color: var(--tw-teal); }
   padding: 12px var(--space-4);
   border: 0;
   border-radius: var(--radius);
+  font-family: inherit;
   text-decoration: none;
   cursor: pointer;
 }
@@ -129,6 +130,7 @@ a { color: var(--tw-teal); }
 .form input.is-invalid { border-color: var(--tw-coral); }
 .form__row--check { display: flex; gap: var(--space-2); align-items: flex-start; }
 .form__row--check input { margin-top: 6px; }
+.form__row--check label { font-weight: 400; margin: 0; }
 .form__msg { margin-top: var(--space-3); font-weight: 700; }
 
 /* footer */
