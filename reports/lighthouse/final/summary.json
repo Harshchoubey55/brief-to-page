@@ -1,0 +1,18 @@
+{
+  "runs": 3,
+  "median_run": 1,
+  "performance_all_runs": [
+    100,
+    100,
+    100
+  ],
+  "performance": 100,
+  "accessibility": 100,
+  "best-practices": 100,
+  "seo": 100,
+  "LCP": 1913.035875,
+  "CLS": 0,
+  "TBT": 12.5,
+  "Page weight": 167536,
+  "failing_a11y": []
+}
