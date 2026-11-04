@@ -63,14 +63,16 @@
       "heading": "Second sources, not new countries",
       "body": "Most firms are not moving production. They are adding a backup supplier within the same region and paying a small premium for it.",
       "image": {
-        "file": "theme-suppliers"
+        "file": "theme-suppliers",
+        "alt": "Illustration of two factories linked by an arrow, one supplying the other"
       }
     },
     {
       "heading": "Freight is the cost that surprised people",
       "body": "Raw material prices settled in 2026. Freight did not, and few budgets had room for it.",
       "image": {
-        "file": "theme-freight"
+        "file": "theme-freight",
+        "alt": "Illustration of a delivery truck in front of a rising cost line"
       }
     },
     {
