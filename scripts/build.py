@@ -43,6 +43,7 @@ def main():
     for folder in ("css", "fonts", "js"):
         copy_tree(ROOT / "src" / folder, OUT / folder)
     shutil.copy2(ROOT / "src" / "vendor" / "jquery-3.7.1.min.js", OUT / "js")
+    shutil.copy2(ROOT / "src" / "favicon.svg", OUT)
     copy_tree(ROOT / "src" / "images", OUT / "images")
     (OUT / "images" / "manifest.json").unlink()
 

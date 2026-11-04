@@ -8,10 +8,13 @@
   <meta name="keywords" content="supply chain, manufacturing, outlook, report">
   <meta property="og:title" content="2026 Mid-Market Supply Chain Outlook | Tidewell">
   <meta property="og:description" content="What 400 mid-sized manufacturers told us about costs, suppliers and stock levels for 2026. Download the full report.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="fonts/source-sans-3-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/source-sans-3-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="css/tokens.css">
   <link rel="stylesheet" href="css/main.css">
-  <script src="js/jquery-3.7.1.min.js"></script>
-  <script src="js/main.js"></script>
+  <script src="js/jquery-3.7.1.min.js" defer></script>
+  <script src="js/main.js" defer></script>
 </head>
 <body>
 <header class="site-header">
@@ -62,13 +65,13 @@
     <h2>Three things that changed this year</h2>
     <div class="cards">
       <article class="card">
-<img src="images/theme-suppliers-960.webp" srcset="images/theme-suppliers-480.webp 480w, images/theme-suppliers-960.webp 960w, images/theme-suppliers-1600.webp 1600w" sizes="(min-width: 720px) 33vw, 100vw" width="1600" height="1067" loading="lazy" decoding="async">        <div class="card__body">
+<img src="images/theme-suppliers-960.webp" srcset="images/theme-suppliers-480.webp 480w, images/theme-suppliers-960.webp 960w, images/theme-suppliers-1600.webp 1600w" sizes="(min-width: 720px) 33vw, 100vw" width="1600" height="1067" alt="Illustration of two factories linked by an arrow, one supplying the other" loading="lazy" decoding="async">        <div class="card__body">
           <h3>Second sources, not new countries</h3>
           <p>Most firms are not moving production. They are adding a backup supplier within the same region and paying a small premium for it.</p>
         </div>
       </article>
       <article class="card">
-<img src="images/theme-freight-960.webp" srcset="images/theme-freight-480.webp 480w, images/theme-freight-960.webp 960w, images/theme-freight-1600.webp 1600w" sizes="(min-width: 720px) 33vw, 100vw" width="1600" height="1067" loading="lazy" decoding="async">        <div class="card__body">
+<img src="images/theme-freight-960.webp" srcset="images/theme-freight-480.webp 480w, images/theme-freight-960.webp 960w, images/theme-freight-1600.webp 1600w" sizes="(min-width: 720px) 33vw, 100vw" width="1600" height="1067" alt="Illustration of a delivery truck in front of a rising cost line" loading="lazy" decoding="async">        <div class="card__body">
           <h3>Freight is the cost that surprised people</h3>
           <p>Raw material prices settled in 2026. Freight did not, and few budgets had room for it.</p>
         </div>
@@ -132,13 +135,16 @@
     <p class="muted">42 pages, PDF. Sent to your inbox.</p>
     <form class="form" id="download-form" novalidate>
       <div class="form__row">
-        <input id="name" name="name" type="text" autocomplete="name" placeholder="Full name" required>
+        <label for="name">Full name</label>
+        <input id="name" name="name" type="text" autocomplete="name" required>
       </div>
       <div class="form__row">
-        <input id="email" name="email" type="email" autocomplete="email" placeholder="Work email" required>
+        <label for="email">Work email</label>
+        <input id="email" name="email" type="email" autocomplete="email" required>
       </div>
       <div class="form__row">
-        <input id="company" name="company" type="text" autocomplete="organization" placeholder="Company" required>
+        <label for="company">Company</label>
+        <input id="company" name="company" type="text" autocomplete="organization" required>
       </div>
       <div class="form__row form__row--check">
         <input id="consent" name="consent" type="checkbox">

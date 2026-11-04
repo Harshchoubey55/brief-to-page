@@ -4,11 +4,13 @@
   font-family: "Source Sans 3";
   src: url("../fonts/source-sans-3-latin-400-normal.woff2") format("woff2");
   font-weight: 400;
+  font-display: swap;
 }
 @font-face {
   font-family: "Source Sans 3";
   src: url("../fonts/source-sans-3-latin-700-normal.woff2") format("woff2");
   font-weight: 700;
+  font-display: swap;
 }
 
 :root {
@@ -17,7 +19,7 @@
   --tw-sand: #F4EFE6;
   --tw-coral: #E4572E;
   --tw-ink: #1D2733;
-  --tw-ink-muted: #8A96A3;
+  --tw-ink-muted: #5A6675;
   --tw-white: #FFFFFF;
 
   --font: "Source Sans 3", system-ui, "Segoe UI", Roboto, Arial, sans-serif;
