@@ -29,7 +29,9 @@ a { color: var(--tw-teal); }
   letter-spacing: .08em;
   font-size: 14px;
   font-weight: 700;
-  color: var(--tw-coral);
+  color: var(--tw-sand);
+  border-left: 4px solid var(--tw-coral);
+  padding-left: var(--space-2);
 }
 
 .btn {
