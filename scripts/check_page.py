@@ -175,6 +175,11 @@ def run_checks():
                 if ratio < 4.5:
                     errors.append(f"{fg} on {bg} contrast is {ratio:.2f}:1, needs 4.5:1")
 
+    # brand guide: coral is never used for text
+    main_css = (ROOT / "src" / "css" / "main.css").read_text(encoding="utf-8")
+    for m in re.finditer(r"([^{}]+)\{[^}]*(?<![\w-])color:\s*var\(--tw-coral\)", main_css):
+        errors.append(f"main.css '{m.group(1).strip()}' uses coral as a text colour, brand guide says no")
+
     text = " ".join(p.text)
     for word in BANNED_WORDS:
         if re.search(rf"\b{re.escape(word)}\b", text, re.I):
