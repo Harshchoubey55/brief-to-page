@@ -5,7 +5,8 @@
     <form class="form" id="download-form" novalidate>
       {% for f in download.fields %}
       <div class="form__row">
-        <input id="{{ f.id }}" name="{{ f.id }}" type="{{ f.type }}" autocomplete="{{ f.autocomplete }}" placeholder="{{ f.label }}" required>
+        <label for="{{ f.id }}">{{ f.label }}</label>
+        <input id="{{ f.id }}" name="{{ f.id }}" type="{{ f.type }}" autocomplete="{{ f.autocomplete }}" required>
       </div>
       {% endfor %}
       <div class="form__row form__row--check">

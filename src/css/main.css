@@ -116,6 +116,7 @@ a { color: var(--tw-teal); }
 
 /* form */
 .form__row { margin-bottom: var(--space-3); }
+.form__row > label { display: block; font-weight: 700; margin-bottom: var(--space-1); }
 .form input[type="text"], .form input[type="email"] {
   width: 100%;
   font: inherit;
