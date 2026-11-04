@@ -6,41 +6,80 @@
     "language": "en",
     "owner": "Tidewell Marketing - Demand Generation",
     "review_date": "2027-05-01",
-    "tags": ["supply chain", "manufacturing", "outlook", "report"]
+    "tags": [
+      "supply chain",
+      "manufacturing",
+      "outlook",
+      "report"
+    ]
   },
   "nav": [
-    { "label": "Findings", "href": "#findings" },
-    { "label": "Themes", "href": "#themes" },
-    { "label": "FAQ", "href": "#faq" },
-    { "label": "Get the report", "href": "#download" }
+    {
+      "label": "Findings",
+      "href": "#findings"
+    },
+    {
+      "label": "Themes",
+      "href": "#themes"
+    },
+    {
+      "label": "FAQ",
+      "href": "#faq"
+    },
+    {
+      "label": "Get the report",
+      "href": "#download"
+    }
   ],
   "hero": {
     "eyebrow": "Report, November 2026",
     "heading": "Shipping through uncertainty",
     "subheading": "The 2026 Mid-Market Supply Chain Outlook: what 400 mid-sized manufacturers plan to change next year, and what they are holding back on.",
-    "cta": { "label": "Download the report", "href": "#download" },
-    "image": { "file": "hero-harbour", "alt": "Illustration of a harbour at dusk with cranes loading shipping containers" }
+    "cta": {
+      "label": "Download the report",
+      "href": "#download"
+    },
+    "image": {
+      "file": "hero-harbour",
+      "alt": "Illustration of a harbour at dusk with cranes loading shipping containers"
+    }
   },
   "stats": [
-    { "value": "63%", "label": "plan to add a second supplier for at least one critical part" },
-    { "value": "14%", "label": "average rise in inbound freight cost over the last 12 months" },
-    { "value": "1 in 3", "label": "now hold more than 60 days of safety stock" }
+    {
+      "value": "63%",
+      "label": "plan to add a second supplier for at least one critical part"
+    },
+    {
+      "value": "14%",
+      "label": "average rise in inbound freight cost over the last 12 months"
+    },
+    {
+      "value": "1 in 3",
+      "label": "now hold more than 60 days of safety stock"
+    }
   ],
   "themes": [
     {
       "heading": "Second sources, not new countries",
       "body": "Most firms are not moving production. They are adding a backup supplier within the same region and paying a small premium for it.",
-      "image": { "file": "theme-suppliers", "alt": "" }
+      "image": {
+        "file": "theme-suppliers"
+      }
     },
     {
       "heading": "Freight is the cost that surprised people",
       "body": "Raw material prices settled in 2026. Freight did not, and few budgets had room for it.",
-      "image": { "file": "theme-freight", "alt": "" }
+      "image": {
+        "file": "theme-freight"
+      }
     },
     {
       "heading": "Stock is back on the balance sheet",
       "body": "Lean inventory is out of favour. Firms are holding more, and finance teams want to know what it costs.",
-      "image": { "file": "theme-stock", "alt": "Illustration of warehouse shelving stacked with boxes" }
+      "image": {
+        "file": "theme-stock",
+        "alt": "Illustration of warehouse shelving stacked with boxes"
+      }
     }
   ],
   "quote": {
@@ -69,9 +108,24 @@
     "heading": "Get the full report",
     "body": "42 pages, PDF. Sent to your inbox.",
     "fields": [
-      { "id": "name", "label": "Full name", "type": "text", "autocomplete": "name" },
-      { "id": "email", "label": "Work email", "type": "email", "autocomplete": "email" },
-      { "id": "company", "label": "Company", "type": "text", "autocomplete": "organization" }
+      {
+        "id": "name",
+        "label": "Full name",
+        "type": "text",
+        "autocomplete": "name"
+      },
+      {
+        "id": "email",
+        "label": "Work email",
+        "type": "email",
+        "autocomplete": "email"
+      },
+      {
+        "id": "company",
+        "label": "Company",
+        "type": "text",
+        "autocomplete": "organization"
+      }
     ],
     "consent": "Tidewell may email me once about this report.",
     "submit": "Send me the report"
