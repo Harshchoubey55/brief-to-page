@@ -23,6 +23,8 @@ def copy_tree(src, dst):
 
 def main():
     content = json.loads((ROOT / "content" / "page.json").read_text(encoding="utf-8"))
+    # written by scripts/optimize_images.py
+    images = json.loads((ROOT / "src" / "images" / "manifest.json").read_text(encoding="utf-8"))
 
     env = Environment(
         loader=FileSystemLoader(ROOT / "templates"),
@@ -31,18 +33,18 @@ def main():
         trim_blocks=True,
         lstrip_blocks=True,
     )
-    html = env.get_template("base.html").render(**content)
+    html = env.get_template("base.html").render(images=images, **content)
 
     if OUT.exists():
         shutil.rmtree(OUT)
     OUT.mkdir()
     (OUT / "index.html").write_text(html, encoding="utf-8")
 
-    copy_tree(ROOT / "src" / "css", OUT / "css")
-    copy_tree(ROOT / "src" / "fonts", OUT / "fonts")
-    copy_tree(ROOT / "src" / "js", OUT / "js")
+    for folder in ("css", "fonts", "js"):
+        copy_tree(ROOT / "src" / folder, OUT / folder)
     shutil.copy2(ROOT / "src" / "vendor" / "jquery-3.7.1.min.js", OUT / "js")
-    copy_tree(ROOT / "assets" / "originals", OUT / "images")
+    copy_tree(ROOT / "src" / "images", OUT / "images")
+    (OUT / "images" / "manifest.json").unlink()
 
     print(f"built {OUT / 'index.html'}")
 

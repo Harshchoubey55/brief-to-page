@@ -1,0 +1,86 @@
+{
+  "hero-harbour": {
+    "width": 2800,
+    "height": 1600,
+    "sizes": [
+      {
+        "file": "hero-harbour-480.webp",
+        "width": 480,
+        "bytes": 5238
+      },
+      {
+        "file": "hero-harbour-960.webp",
+        "width": 960,
+        "bytes": 11530
+      },
+      {
+        "file": "hero-harbour-1600.webp",
+        "width": 1600,
+        "bytes": 21972
+      }
+    ]
+  },
+  "theme-freight": {
+    "width": 2400,
+    "height": 1600,
+    "sizes": [
+      {
+        "file": "theme-freight-480.webp",
+        "width": 480,
+        "bytes": 3472
+      },
+      {
+        "file": "theme-freight-960.webp",
+        "width": 960,
+        "bytes": 7986
+      },
+      {
+        "file": "theme-freight-1600.webp",
+        "width": 1600,
+        "bytes": 15322
+      }
+    ]
+  },
+  "theme-stock": {
+    "width": 2400,
+    "height": 1600,
+    "sizes": [
+      {
+        "file": "theme-stock-480.webp",
+        "width": 480,
+        "bytes": 3284
+      },
+      {
+        "file": "theme-stock-960.webp",
+        "width": 960,
+        "bytes": 5686
+      },
+      {
+        "file": "theme-stock-1600.webp",
+        "width": 1600,
+        "bytes": 12366
+      }
+    ]
+  },
+  "theme-suppliers": {
+    "width": 2400,
+    "height": 1600,
+    "sizes": [
+      {
+        "file": "theme-suppliers-480.webp",
+        "width": 480,
+        "bytes": 2180
+      },
+      {
+        "file": "theme-suppliers-960.webp",
+        "width": 960,
+        "bytes": 4650
+      },
+      {
+        "file": "theme-suppliers-1600.webp",
+        "width": 1600,
+        "bytes": 9806
+      }
+    ]
+  }
+}

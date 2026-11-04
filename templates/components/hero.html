@@ -7,7 +7,7 @@
       <a class="btn" href="{{ hero.cta.href }}">{{ hero.cta.label }}</a>
     </div>
     <div class="hero__media">
-      {% with image = hero.image %}{% include "components/picture.html" %}{% endwith %}
+      {% with image = hero.image, priority = true, sizes = "(min-width: 960px) 50vw, 100vw" %}{% include "components/picture.html" %}{% endwith %}
     </div>
   </div>
 </section>

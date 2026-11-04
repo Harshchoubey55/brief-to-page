@@ -1,1 +1,7 @@
-<img src="images/{{ image.file }}.png"{% if image.alt is defined %} alt="{{ image.alt }}"{% endif %}>
+{# One responsive <img>. Needs `image` (file + alt) and the `images` manifest. #}
+{% set info = images[image.file] %}
+{% set largest = info.sizes[-1] %}
+{% set fallback = info.sizes[1] if info.sizes | length > 1 else largest %}
+{% set srcset %}{% for s in info.sizes %}images/{{ s.file }} {{ s.width }}w{{ ", " if not loop.last }}{% endfor %}{% endset %}
+{% set height = (info.height * largest.width / info.width) | round | int %}
+<img src="images/{{ fallback.file }}" srcset="{{ srcset }}" sizes="{{ sizes | default('(min-width: 720px) 33vw, 100vw') }}" width="{{ largest.width }}" height="{{ height }}"{% if image.alt is defined %} alt="{{ image.alt }}"{% endif %}{% if priority | default(false) %} fetchpriority="high"{% else %} loading="lazy" decoding="async"{% endif %}>
