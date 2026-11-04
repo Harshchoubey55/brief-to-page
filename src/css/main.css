@@ -9,7 +9,7 @@ body {
   background: var(--tw-white);
 }
 
-img { max-width: 100%; display: block; }
+img { max-width: 100%; height: auto; display: block; }
 
 h1, h2, h3 { color: var(--tw-navy); margin: 0 0 var(--space-3); }
 h1 { font-size: 32px; line-height: 1.15; }
