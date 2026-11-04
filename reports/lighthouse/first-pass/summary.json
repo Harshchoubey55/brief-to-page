@@ -1,0 +1,21 @@
+{
+  "runs": 3,
+  "median_run": 1,
+  "performance_all_runs": [
+    74,
+    74,
+    74
+  ],
+  "performance": 74,
+  "accessibility": 90,
+  "best-practices": 96,
+  "seo": 91,
+  "LCP": 22353.6216,
+  "CLS": 6.48815373986057e-05,
+  "TBT": 0,
+  "Page weight": 4122748,
+  "failing_a11y": [
+    "color-contrast",
+    "image-alt"
+  ]
+}
