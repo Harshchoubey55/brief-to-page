@@ -1,0 +1,13 @@
+<section id="findings" class="section stats">
+  <div class="wrap">
+    <h2>Headline findings</h2>
+    <ul class="stats__list">
+      {% for s in stats %}
+      <li class="stat">
+        <span class="stat__value">{{ s.value }}</span>
+        <span class="stat__label">{{ s.label }}</span>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>

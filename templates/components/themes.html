@@ -1,0 +1,16 @@
+<section id="themes" class="section section--sand">
+  <div class="wrap">
+    <h2>Three things that changed this year</h2>
+    <div class="cards">
+      {% for t in themes %}
+      <article class="card">
+        {% with image = t.image %}{% include "components/picture.html" %}{% endwith %}
+        <div class="card__body">
+          <h3>{{ t.heading }}</h3>
+          <p>{{ t.body }}</p>
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>

@@ -1,0 +1,19 @@
+<section id="download" class="section download">
+  <div class="wrap wrap--narrow">
+    <h2>{{ download.heading }}</h2>
+    <p class="muted">{{ download.body }}</p>
+    <form class="form" id="download-form" novalidate>
+      {% for f in download.fields %}
+      <div class="form__row">
+        <input id="{{ f.id }}" name="{{ f.id }}" type="{{ f.type }}" autocomplete="{{ f.autocomplete }}" placeholder="{{ f.label }}" required>
+      </div>
+      {% endfor %}
+      <div class="form__row form__row--check">
+        <input id="consent" name="consent" type="checkbox">
+        <label for="consent">{{ download.consent }}</label>
+      </div>
+      <button class="btn" type="submit">{{ download.submit }}</button>
+      <p class="form__msg" role="status"></p>
+    </form>
+  </div>
+</section>

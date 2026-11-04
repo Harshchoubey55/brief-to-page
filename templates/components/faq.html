@@ -1,0 +1,17 @@
+<section id="faq" class="section section--sand">
+  <div class="wrap wrap--narrow">
+    <h2>Questions about the report</h2>
+    <div class="faq">
+      {% for item in faq %}
+      <div class="faq__item">
+        <h3>
+          <button class="faq__q" type="button" aria-expanded="false" aria-controls="faq-{{ loop.index }}">{{ item.q }}</button>
+        </h3>
+        <div class="faq__a" id="faq-{{ loop.index }}" hidden>
+          <p>{{ item.a }}</p>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

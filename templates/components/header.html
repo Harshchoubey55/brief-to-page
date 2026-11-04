@@ -1,0 +1,13 @@
+<header class="site-header">
+  <div class="wrap site-header__inner">
+    <a class="logo" href="#main">Tidewell</a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav id="site-nav" class="site-nav">
+      <ul>
+        {% for item in nav %}
+        <li><a href="{{ item.href }}">{{ item.label }}</a></li>
+        {% endfor %}
+      </ul>
+    </nav>
+  </div>
+</header>

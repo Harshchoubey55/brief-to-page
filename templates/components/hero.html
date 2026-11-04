@@ -1,0 +1,13 @@
+<section class="hero">
+  <div class="wrap hero__inner">
+    <div class="hero__text">
+      <p class="eyebrow">{{ hero.eyebrow }}</p>
+      <h1>{{ hero.heading }}</h1>
+      <p class="hero__sub">{{ hero.subheading }}</p>
+      <a class="btn" href="{{ hero.cta.href }}">{{ hero.cta.label }}</a>
+    </div>
+    <div class="hero__media">
+      {% with image = hero.image %}{% include "components/picture.html" %}{% endwith %}
+    </div>
+  </div>
+</section>

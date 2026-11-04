@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="{{ meta.language }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ meta.title }}</title>
+  <meta name="description" content="{{ meta.description }}">
+  <meta name="keywords" content="{{ meta.tags | join(', ') }}">
+  <meta property="og:title" content="{{ meta.title }}">
+  <meta property="og:description" content="{{ meta.description }}">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <script src="js/main.js"></script>
+</head>
+<body>
+  {% include "components/header.html" %}
+  <main id="main">
+    {% include "components/hero.html" %}
+    {% include "components/stats.html" %}
+    {% include "components/themes.html" %}
+    {% include "components/quote.html" %}
+    {% include "components/faq.html" %}
+    {% include "components/download.html" %}
+  </main>
+  {% include "components/footer.html" %}
+</body>
+</html>
