@@ -39,6 +39,8 @@ def main():
         shutil.rmtree(OUT)
     OUT.mkdir()
     (OUT / "index.html").write_text(html, encoding="utf-8")
+    # docs/ is already a finished site, so GitHub Pages doesn't need to run Jekyll on it
+    (OUT / ".nojekyll").touch()
 
     for folder in ("css", "fonts", "js"):
         copy_tree(ROOT / "src" / folder, OUT / folder)
